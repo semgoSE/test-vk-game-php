@@ -1,0 +1,159 @@
+{
+    "type": "start",
+    "player": "semgo",
+    "map": {
+      "name": "my_map",
+      "scheme": [
+        {
+          "room_id": 0,
+          "is_start": true,
+          "is_end": false,
+          "w_top": null,
+          "w_left": null,
+          "w_right": 1,
+          "w_bottom": null,
+          "mode": "empty"
+        },
+        {
+          "room_id": 1,
+          "is_start": false,
+          "is_end": false,
+          "w_top": null,
+          "w_left": 0,
+          "w_right": 2,
+          "w_bottom": 5,
+          "mode": "empty"
+        },
+        {
+          "room_id": 2,
+          "is_start": false,
+          "is_end": false,
+          "w_top": null,
+          "w_left": 1,
+          "w_right": 3,
+          "w_bottom": null,
+          "mode": "empty"
+        },
+        {
+          "room_id": 3,
+          "is_start": false,
+          "is_end": false,
+          "w_top": null,
+          "w_left": 2,
+          "w_right": 4,
+          "w_bottom": null,
+          "mode": "enemy"
+        },
+        {
+          "room_id": 4,
+          "is_start": false,
+          "is_end": false,
+          "w_top": null,
+          "w_left": 3,
+          "w_right": null,
+          "w_bottom": null,
+          "mode": "treasure"
+        },
+        {
+          "room_id": 5,
+          "is_start": false,
+          "is_end": false,
+          "w_top": 1,
+          "w_left": null,
+          "w_right": 6,
+          "w_bottom": null,
+          "mode": "empty"
+        },
+        {
+          "room_id": 6,
+          "is_start": false,
+          "is_end": false,
+          "w_top": null,
+          "w_left": 5,
+          "w_right": null,
+          "w_bottom": 7,
+          "mode": "enemy"
+        },
+        {
+          "room_id": 7,
+          "is_start": false,
+          "is_end": false,
+          "w_top": 6,
+          "w_left": null,
+          "w_right": null,
+          "w_bottom": 8,
+          "mode": "treasure"
+        },
+        {
+          "room_id": 8,
+          "is_start": false,
+          "is_end": false,
+          "w_top": 7,
+          "w_left": 9,
+          "w_right": 11,
+          "w_bottom": null,
+          "mode": "empty"
+        },
+        {
+          "room_id": 9,
+          "is_start": false,
+          "is_end": false,
+          "w_top": null,
+          "w_left": 10,
+          "w_right": 8,
+          "w_bottom": null,
+          "mode": "empty"
+        },
+        {
+          "room_id": 10,
+          "is_start": false,
+          "is_end": false,
+          "w_top": null,
+          "w_left": null,
+          "w_right": 9,
+          "w_bottom": null,
+          "mode": "enemy"
+        },
+        {
+          "room_id": 11,
+          "is_start": false,
+          "is_end": false,
+          "w_top": null,
+          "w_left": 8,
+          "w_right": 12,
+          "w_bottom": 14,
+          "mode": "empty"
+        },
+        {
+          "room_id": 12,
+          "is_start": false,
+          "is_end": false,
+          "w_top": 13,
+          "w_left": 11,
+          "w_right": null,
+          "w_bottom": null,
+          "mode": "empty"
+        },
+        {
+          "room_id": 13,
+          "is_start": false,
+          "is_end": false,
+          "w_top": null,
+          "w_left": null,
+          "w_right": null,
+          "w_bottom": 12,
+          "mode": "treasure"
+        },
+        {
+          "room_id": 15,
+          "is_start": false,
+          "is_end": true,
+          "w_top": 11,
+          "w_left": null,
+          "w_right": null,
+          "w_bottom": null,
+          "mode": "empty"
+        }
+      ]
+    }
+  }
