@@ -58,4 +58,4 @@
 
 
 Карта подземелья. (прошу прощения за красоту, я плохой художник)
-![map](//placehold.it/150x100 "Карта")
+![map](https://github.com/semgoSE/test-vk-game-php/blob/main/map.png) 
