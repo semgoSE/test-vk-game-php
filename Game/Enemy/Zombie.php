@@ -1,5 +1,7 @@
 <?php
 
+require_once "Enemy.php";
+
 class Zombie extends Enemy {
     public function __construct() {
         $this->name = "Зомби";

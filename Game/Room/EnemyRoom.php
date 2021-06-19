@@ -3,7 +3,7 @@
 require_once "Room.php";
 require_once dirname(__FILE__)."/../Enemy/Enemy.php";
 require_once dirname(__FILE__)."/../Enemy/Zombie.php";
-
+require_once dirname(__FILE__)."/../Enemy/Skeleton.php";
 class EnemyRoom extends Room {
 
     //возможные противники
@@ -20,7 +20,7 @@ class EnemyRoom extends Room {
         parent::__construct($pdo, $player);
 
 
-        $this->types_mob = [new Zombie()];
+        $this->types_mob = [new Zombie(), new Skeleton()];
 
         //выбираем врага
         $this->enemy = $this->types_mob[rand(0, count($this->types_mob)-1)];

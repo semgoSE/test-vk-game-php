@@ -1,4 +1,13 @@
 <?php
+
+/*
+    author semgoSE(https://github.com/semgoSE)
+    date 18.06.2021
+*/
+
+
+
+
 //подключаемся к бд
 require_once "./db.php";
 
@@ -9,7 +18,7 @@ require_once "./Game/Room/EmptyRoom.php";
 require_once "./Game/Room/TreasureRoom.php";
 require_once "./Game/Room/EnemyRoom.php";
 
-
+//запускаем сессию
 session_start();
 
 //получаем данные из запроса
@@ -22,20 +31,19 @@ if($file['type'] == "start") {
         $predata = $pdo->prepare($sql_create_room);
         $predata->execute($room);
     }
-    $pl = new Player();
+    $pl = new Player($pdo);
     $pl->create($file['player']);
     echo "Игра началась. Игрок ".$pl->player."<br />";
     goRoom($pdo, $pl);
 } else {
 
-    $pl = new Player();
+    $pl = new Player($pdo);
     $pl->load();
     // echo "номер текущей команты ".$pl->room_id."<br />";
     $room = new Room($pdo, $pl);
 
     switch($file["action"]) {
         case "top":
-        echo $room->w_top;
          if($room->w_top !== false) {
              $next_room = $room->w_top;
              $pl->setRoomId($next_room);
@@ -66,6 +74,9 @@ if($file['type'] == "start") {
                 goRoom($pdo, $pl);
             } else echo "Прохода нет";
         break;
+
+        default: 
+            echo "Такого действия нет. (".$file["action"].")";
     }
 
     

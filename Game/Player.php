@@ -8,8 +8,8 @@ class Player {
     public string $player;
     public int $room_id = 0;
 
-    public function __construct() {
-
+    public function __construct($pdo) {
+        $this->pdo = $pdo;
     }
 
 
@@ -55,7 +55,10 @@ class Player {
 
     //заканчиваем игру
     public function finish() {
-        echo "Вы вышли из подземелья";
+        //сохраняем очки в бд.
+        $e = $this->pdo->prepare("INSERT user SET `player` = ?, `count`= ?");
+        $e->execute([$this->player, $this->count]);
+        echo "Вы вышли из подземелья. Вы набрали ".$this->count;
         session_destroy();
     }
 
