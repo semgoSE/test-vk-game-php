@@ -6,6 +6,10 @@
   
 Сервер apache
 
+## Тест
+
+Вы можете попробовать сыграть в игру либо на моем сервере https://api-waste.hhos.ru/VK-GAME/ или запустите свой локальный. [Коллекция](https://www.getpostman.com/collections/ff838814646dbe7a347a)
+
 ##  Локальный запуск(windows) 
  1. [Скачать](https://www.apachefriends.org/ru/index.html) и запустить XAMPP
  2. В меню XAMPP запустить Apache и MySQL сервер
